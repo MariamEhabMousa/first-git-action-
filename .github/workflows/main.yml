@@ -12,9 +12,8 @@ jobs:
 
 
     steps: 
-      - name: 'Testing GitHub Action'
-        run: pwd
+      - name: 'Printing folder contents'
+        run: ls
 
-      - name: 'Testing Printing'
-        run: echo mariam
+      
       
