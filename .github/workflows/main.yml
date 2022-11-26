@@ -16,8 +16,8 @@ jobs:
         run: ls
       - uses : actions/checkout@v3
 
-      - name : 'After'
-        run : ls   
+      - name : 'Login to docker hub'
+        run : docker login --username mariammousa --password dckr_pat_LgIXNaE1DOA01nKzsAyoCwo47eA 
 
       
       
