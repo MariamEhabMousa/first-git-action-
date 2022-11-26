@@ -1,14 +1,14 @@
 on:
   push:
     branches: 
-      - branch 
+      - branch1 
        
 
 
 
 jobs: 
   build:
-    runs-on: ubuntu-ltest
+    runs-on: ubuntu-latest
 
 
     steps: 
