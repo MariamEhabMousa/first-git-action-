@@ -12,8 +12,6 @@ jobs:
 
 
     steps: 
-      - name: 'Before'
-        run: ls
       - uses : actions/checkout@v3
 
       - name : "Login to docker hub"
@@ -21,6 +19,7 @@ jobs:
 
       - name : "Building docker image"
         run : docker build -t ${{ secrets.DOCKER_USERNAME }}/myimage . 
+        
       - name : "Pushing to docker hub"
         run : docker push ${{ secrets.DOCKER_USERNAME }}/myimage 
       
